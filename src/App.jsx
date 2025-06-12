@@ -1,5 +1,12 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
-import { Home, ErrorPage, LayoutBase, Academic, Price, Photos, About, Location } from "./assets/components"
+import LayoutBase from "./assets/components/LayoutBase"
+import Home from "./assets/components/naviPages/Homepage"
+import Academic from "./assets/components/naviPages/Price"
+import Price from "./assets/components/naviPages/Price"
+import Photos from "./assets/components/naviPages/Photos"
+import Location from "./assets/components/naviPages/Location"
+import About from "./assets/components/naviPages/About"
+import ErrorPage from "./assets/components/ErrorPage"
 
 function App() {
 
@@ -10,7 +17,7 @@ function App() {
       children: [
         {
           index: true,
-          element: <Home />
+          element: <Home />,
         },
         {
           path: "academic",
