@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 import LayoutBase from "./assets/components/LayoutBase"
 import Home from "./assets/components/naviPages/Homepage"
-import Academic from "./assets/components/naviPages/Price"
+import Academic from "./assets/components/naviPages/Academic"
 import Price from "./assets/components/naviPages/Price"
 import Photos from "./assets/components/naviPages/Photos"
 import Location from "./assets/components/naviPages/Location"
