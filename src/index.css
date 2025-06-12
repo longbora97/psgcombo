@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "khpensurin";
+  font-style: normal;
+  src: url("./assets/fonts/KhmerPenSurin.ttf");
+}
+
+@font-face {
+  font-family: "khbattambang";
+  font-style: normal;
+  src: url("./assets/fonts/KhmerOSbattambang.ttf");
+}
+
+@font-face {
+  font-family: "khosmuollight";
+  font-style: normal;
+  src: url("./assets/fonts/KhmerOSmuollight.ttf");
+}
+
+@font-face {
+  font-family: "khrotanaktraiy";
+  font-style: normal;
+  src: url("./assets/fonts/KhmerRotanakTraiy.ttf");
+}
+
+@layer base {
+  html {
+    background-color: #fffcff;
+    font-family: "khbattambang";
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    font-family: "khosmuollight";
+  }
+
+  h2 {
+    font-family: "Times New Roman";
+  }
+
+  .header_navi a.active {
+    position: relative;
+    /* background-color: white; */
+  }
+
+  .header_navi a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+
+  .tableLocation td {
+    padding: 5px;
+  }
+
+  .price_table {
+    background-color: #efefef;
+  }
+  
+  .price_table, .price_table th {
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    padding: 20px;
+  }
+
+  .price_table td {
+    border-bottom: 1px solid #999;
+    padding: 20px;
+  }
+}
